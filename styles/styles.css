@@ -1,0 +1,118 @@
+p, h1, h2, h3, h4 {
+  color: #444;
+}
+h1 {
+  margin-bottom: 30px;
+}
+input[type="text"] {
+  width: 200px;
+  float: left;
+}
+.narrow-button {
+  float: left;
+  margin-left: 10px;
+}
+.loader {
+  margin : 100px auto;
+  font-size: 10px;
+  float: none;
+  border-top: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-right: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-bottom: 1.1em solid rgba(147, 147, 147, 0.2);
+  border-left: 1.1em solid #676767;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.table-row [class*="col-"] {
+    height: auto;
+    min-height: none;
+    position: relative;
+    padding: 20px 40px 20px 5px;
+}
+.table-row li:hover h4 {
+  color: #4550e1;
+}
+@media only screen and (min-width: 768px) {
+  .table-row [class*="col-"] {
+        height: 270px;
+        min-height: 270px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+  .table-row [class*="col-"] {
+      height: 220px;
+      min-height: 220px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+  .table-row [class*="col-"] {
+      height: 180px;
+      min-height: 180px;
+    }
+}
+.container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.btn.btn-primary {
+  border-radius: 2px;
+  border: none;
+  background-color: #4550e1;
+}
+.btn-remove {
+  margin: 0 auto;
+  padding: 3px 20px;
+  line-height: 2;
+  left: auto;
+  box-shadow: none;
+  background-color: #666;
+  color: white;
+  border: none;
+}
+.btn-remove:hover {
+  background-color: #f86394;
+}
+@media only screen and (min-width: 768px) {
+  .btn-remove {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+li {
+  padding: .35em 1em;
+}
+.col-xs-4 li:hover {
+  color: white;
+  background-color: #666;
+}
